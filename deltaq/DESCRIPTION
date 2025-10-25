@@ -8,7 +8,7 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Depends: R (>= 4.1.0)
-Imports: shiny, ggplot2, dplyr
+Imports: shiny, ggplot2, dplyr, readxl
 Suggests: testthat (>= 3.0.0), knitr, rmarkdown
 Config/testthat/edition: 3
 LazyData: true
