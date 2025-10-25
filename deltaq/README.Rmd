@@ -89,3 +89,7 @@ If you use this package or dataset, please cite:
 
 > Zachreson, C., et al. (2022). *Model-informed risk assessment for COVID-19 quarantine systems under the Delta variant.*  
 > [Research study on vaccine efficacy and outbreak simulation.]
+
+## License
+This package is released under the MIT License.
+See `LICENSE` for details
