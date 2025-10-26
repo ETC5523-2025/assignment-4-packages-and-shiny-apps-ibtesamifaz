@@ -1,14 +1,25 @@
 Package: deltaq
-Title: Shiny Exploration of <Your Data>
+Title: Shiny Exploration of Quarantine Breach Data
 Version: 0.0.1
-Authors@R: c(person("Ibtesam", "Ifaz", role = c("aut", "cre"), email = "iifa0001@student.monash.edu"))
-Description: <Looks into simulated breach rates in quarantine facilities in Australia>.
-License: MIT   
+Authors@R: 
+    person("Ibtesam", "Ifaz", email = "iifa0001@student.monash.edu", role = c("aut", "cre"))
+Description: Provides a dataset of simulated quarantine breach rates across Australian states 
+    and an interactive Shiny application to explore breach trends by time and jurisdiction.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
-Depends: R (>= 4.1.0)
-Imports: shiny, ggplot2, dplyr, readxl
-Suggests: testthat (>= 3.0.0), knitr, rmarkdown
+Depends: 
+    R (>= 4.1.0)
+Imports: 
+    shiny,
+    ggplot2,
+    dplyr,
+    tidyr,
+    readxl
+Suggests: 
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
 Config/testthat/edition: 3
 LazyData: true

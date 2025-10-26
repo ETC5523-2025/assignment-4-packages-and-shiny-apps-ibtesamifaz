@@ -3,19 +3,28 @@
 \docType{data}
 \name{breach}
 \alias{breach}
-\title{Breach Data (sheet 9 of covid.xlsx)}
+\title{Breach Data (Sheet 9 of covid.xlsx)}
 \format{
-A tibble with one row per date and several numeric columns.
+A tibble with one row per date and the following columns:
+\describe{
+\item{REPORT_DATE}{Date of observation (class: \code{Date})}
+\item{AUS, NSW, VIC, QLD, SA, WA, TAS, NT, ACT}{Daily breach rates for each jurisdiction}
+\item{AUS_BREACH, NSW_BREACH, VIC_BREACH, ...}{Binary indicator (1 = breach event occurred, 0 = none)}
+}
 }
 \source{
-Local Excel file \code{data-raw/covid.xlsx}
+Extracted from local Excel file \code{data-raw/covid.xlsx}.
 }
 \usage{
 breach
 }
 \description{
-Data extracted from sheet 9 of the Excel file stored in \code{data-raw/covid.xlsx}.
-Includes daily observations of quarantine breaches and related metrics by state.
+Daily quarantine breach data used in the DeltaQ Shiny app.
+}
+\details{
+This dataset contains daily observations of quarantine breaches and related metrics
+for Australia and each state or territory. It was extracted from sheet 9 of
+\code{data-raw/covid.xlsx}.
 }
 \examples{
 data(breach)

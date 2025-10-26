@@ -2,10 +2,30 @@
 % Please edit documentation in R/launch_app.R
 \name{launch_app}
 \alias{launch_app}
-\title{Launch the deltaq Shiny app}
+\title{Launch the DeltaQ Shiny App}
 \usage{
 launch_app()
 }
+\value{
+Runs a Shiny application in the user's default web browser.
+}
 \description{
-Launch the deltaq Shiny app
+This function launches the interactive DeltaQ application that allows users
+to explore daily breach rates across Australian jurisdictions over time.
+}
+\details{
+The app enables users to:
+\itemize{
+\item Select one or more states or territories for comparison
+\item Choose a date range to filter the period of interest
+\item View breach rate trends with different colours for each state
+\item Read a dynamic interpretation of the plotted results
+}
+
+The underlying dataset \code{breach} is included within the \pkg{deltaq} package.
+}
+\examples{
+\dontrun{
+  deltaq::launch_app()
+}
 }
