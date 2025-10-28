@@ -1,0 +1,33 @@
+---
+title: "Exploring Simulated Quarantine Breach Data with deltaq"
+output: rmarkdown::html_vignette
+bibliography: references.bib
+vignette: >
+  %\VignetteIndexEntry{Exploring Simulated Quarantine Breach Data with deltaq}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+
+# library(deltaq)
+
+
+## Overview
+
+The **deltaq** package provides access to 7-day quarantine breach rate data [@zachreson2022] simulated for Australia and its states/territories, covering **27 Oct 2020 – 31 Jul 2021**.
+
+## Launch the interactive app 
+
+The DeltaQ: Breach Data Explorer app provides an interactive dashboard for exploring 7-day quarantine breach rates across Australian jurisdictions.
+
+The app automatically updates visualisations when inputs change, allowing real-time comparison of jurisdictions and trends. It is launched directly from R using:
+
+
+**deltaq::launch_app()**
+
+
+This opens the Shiny interface locally in your web browser.
+
+## References
+
