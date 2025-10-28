@@ -2,23 +2,44 @@
 % Please edit documentation in R/delta-package.R
 \docType{package}
 \name{deltaq}
-\alias{deltaq}
 \alias{deltaq-package}
-\title{deltaq: Shiny Exploration of Quarantine Breach Data}
+\alias{deltaq}
+\title{deltaq: Exploring Quarantine Breach Data}
 \description{
-The deltaq package provides:
+The \strong{deltaq} package provides access to simulated 7-day quarantine breach rate data
+for Australia and its states and territories (October 2020 – July 2021),
+based on the modelling by Zachreson et al. (2022).
+}
+\details{
+The goal of this package is to provide simulated breach rates that allow users
+to explore how susceptible each state or territory — and Australia overall —
+may be to viral incursions under varying quarantine system conditions.
+
+In addition to the data, the package includes an interactive Shiny dashboard
+for exploring jurisdictional differences and temporal trends in quarantine breach risk.
+A vignette is also available to demonstrate how to use both the dataset and the app
+for analysis.
+}
+\section{Main functions}{
+
 \itemize{
-\item The dataset \code{\link{breach}}, containing daily breach rate observations
-for Australia and its states/territories.
-\item A Shiny app launched via \code{\link{launch_app}} to explore breach rates
-interactively with date and state filters.
+\item \code{launch_app()} – Launches the \emph{DeltaQ: Breach Data Explorer} Shiny app.
 }
 }
-\seealso{
-\code{\link{launch_app}}, \code{\link{breach}}
+
+\section{Datasets}{
+
+\itemize{
+\item \code{breach} – Simulated 7-day quarantine breach rate data across Australian jurisdictions.
+}
+}
+
+\references{
+Zachreson, C., et al. (2022). \emph{COVID-19 in low-tolerance border quarantine systems:
+Impact of the Delta variant of SARS-CoV-2.} Science Advances.
+\url{https://www.science.org/doi/10.1126/sciadv.abm3624}
 }
 \author{
 \strong{Maintainer}: Ibtesam Ifaz \email{iifa0001@student.monash.edu}
 
 }
-\keyword{internal}
