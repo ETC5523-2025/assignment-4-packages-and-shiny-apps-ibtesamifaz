@@ -1,0 +1,49 @@
+---
+title: "Exploring Quarantine Breach Rates with the DeltaQ Shiny App"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Exploring Quarantine Breach Rates with the DeltaQ Shiny App}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>",
+  fig.width = 7,
+  fig.height = 4.2
+)
+```
+
+## Overview
+
+The deltaq package provides access to simulated 7-day quarantine breach rate data for Australia and its states and territories, covering 27 October 2020 – 31 July 2021.
+
+The included DeltaQ: Breach Data Explorer Shiny app offers an intuitive visualisation of breach rates across jurisdictions. It enables you to:
+
+- Compare breach rate trends between states and territories side-by-side.
+
+- Select any combination of states for focused comparison.
+
+- Filter the date range between 27 October 2020 and 31 July 2021 to zoom into specific periods.
+
+- This makes it easy to see where and when jurisdictions were more susceptible to breaches.
+
+## Launching the app
+
+The app is packaged with deltaq and can be launched directly:
+  
+Launch the Shiny app (interactive)
+
+**deltaq::launch_app()**
+
+Use the controls to pick multiple jurisdictions and narrow the date window. The main panel shows daily breach-rate time series; a short guide below the plot summarises how each state changed.
+
+
+## Data used by the app
+The app uses deltaq::breach, with REPORT_DATE plus one numeric column per jurisdiction (breach rate per day).
+
+- library(deltaq)
+- data("breach")
+- str(breach)

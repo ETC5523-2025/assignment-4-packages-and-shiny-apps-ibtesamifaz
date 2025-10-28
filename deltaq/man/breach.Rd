@@ -3,7 +3,7 @@
 \docType{data}
 \name{breach}
 \alias{breach}
-\title{Breach Data (Sheet 9 of covid.xlsx)}
+\title{Breach Data}
 \format{
 A tibble with one row per date and the following columns:
 \describe{
