@@ -4,7 +4,7 @@
 <!-- badges: start -->
 
 [![pkgdown
-site](https://img.shields.io/badge/docs-pkgdown-blue.svg)](https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-ibtesamifaz/deltaq/)
+site](https://img.shields.io/badge/docs-pkgdown-blue.svg)](https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-ibtesamifaz)
 <!-- badges: end -->
 
 The **deltaq** package provides data and interactive tools for exploring
@@ -24,7 +24,7 @@ scenarios.
 📚 **Documentation** — Full reproducible examples and reference pages
 available at  
 👉 [**deltaq documentation
-site**](https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-ibtesamifaz/deltaq/)
+site**](https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-ibtesamifaz)
 
 This package aims to make Zachreson et al.’s data and findings more
 accessible for teaching, research, and interactive communication.
@@ -36,11 +36,11 @@ To install the development version from GitHub:
 **Option 1 (using remotes):**
 
 ``` r
-install.packages("remotes")
 remotes::install_github(
   "ETC5523-2025/assignment-4-packages-and-shiny-apps-ibtesamifaz",
   subdir = "deltaq",
-  build_vignettes = TRUE
+  dependencies = TRUE,
+  build_vignettes = FALSE  # speed + avoids pandoc issues
 )
 ```
 
