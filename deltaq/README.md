@@ -48,8 +48,7 @@ remotes::install_github(
 
 ``` r
 library(deltaq)
-head(deltaq_data)
-summary(deltaq_data)
+head(breach)
 ```
 
 ### You can also launch the interactive Shiny app included in the package:
