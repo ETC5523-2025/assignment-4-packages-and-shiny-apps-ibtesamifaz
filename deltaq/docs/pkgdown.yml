@@ -1,0 +1,10 @@
+pandoc: '3.2'
+pkgdown: 2.1.3
+pkgdown_sha: ~
+articles:
+  deltaq-app: deltaq-app.html
+  using-deltaq: using-deltaq.html
+last_built: 2025-11-03T03:15Z
+urls:
+  reference: https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-ibtesamifaz/reference
+  article: https://etc5523-2025.github.io/assignment-4-packages-and-shiny-apps-ibtesamifaz/articles
