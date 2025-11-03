@@ -16,7 +16,7 @@ variant using simulation techniques.
 The package includes:
 
 📊 **Dataset** — Simulated quarantine breaches, overseas cases, and
-arrivals across Australian states between 27 October 2020 and 22 April
+arrivals across Australian states between 27 October 2020 and 31 July
 2021.  
 💡 **Shiny app** — An interactive tool that allows users to explore
 outbreak data, visualize state differences, and simulate quarantine
